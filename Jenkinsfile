@@ -110,7 +110,7 @@ pipeline {
 
         stage('Deploy to Kubernetes') {
             steps {
-                dir('K8S') {
+                dir('Jenkins-terraform') {
                     withKubeConfig(
                         credentialsId: 'K8S',
                         restrictKubeConfigAccess: false
