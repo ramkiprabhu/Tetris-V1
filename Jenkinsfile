@@ -115,8 +115,7 @@ pipeline {
                         credentialsId: 'K8S',
                         restrictKubeConfigAccess: false
                     ) {
-                        sh 'kubectl apply -f deployment.yml'
-                        sh 'kubectl apply -f service.yml'
+                        sh 'kubectl apply -f deployment-service.yml'
                     }
                 }
             }
